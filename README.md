@@ -1,38 +1,42 @@
-🌍 SatDetect – City Change Detector Using Satellite Imagery
-Welcome to SatDetect, a simple yet powerful tool for detecting landscape changes between two satellite images of the same region. Whether you're tracking urban development, environmental impact, or deforestation, SatDetect helps you visualize and understand changes over time with just two image uploads.
+# 🌍 SatDetect – City Change Detector Using Satellite Imagery
 
-🔗 GitHub Repository: Mehboob786/CityChangeDetector
+Welcome to **SatDetect**, a simple yet powerful tool for detecting **landscape changes** between two satellite images of the same region. Whether you're tracking urban development, environmental impact, or deforestation, SatDetect helps you **visualize and understand changes over time** with just two image uploads.
 
-✨ Features
-🖼️ Side-by-side Image Comparison
-Compare past and present satellite images interactively.
+🔗 **GitHub Repository:** [Mehboob786/CityChangeDetector](https://github.com/Mehboob786/CityChangeDetector)
 
-🔍 Automatic Change Detection
-Highlights areas with visual differences and labels the change type.
+---
 
-🧠 Smart Change Classification
-Detects:
+## ✨ Features
 
-🌳 Vegetation Loss
+- 🖼️ **Side-by-side Image Comparison**  
+  Compare past and present satellite images interactively.
 
-💧 Water Body Change
+- 🔍 **Automatic Change Detection**  
+  Highlights areas with visual differences and labels the change type.
 
-🏗️ New Construction
+- 🧠 **Smart Change Classification**  
+  Detects:
+  - 🌳 Vegetation Loss
+  - 💧 Water Body Change
+  - 🏗️ New Construction
 
-📊 Change Percentage Report
-Quickly see how much of the area has changed.
+- 📊 **Change Percentage Report**  
+  Quickly see how much of the area has changed.
 
-🔎 Zoomable View
-Zoom in to inspect fine details using streamlit-image-zoom.
+- 🔎 **Zoomable View**  
+  Zoom in to inspect fine details using `streamlit-image-zoom`.
 
-🚀 How to Use
-Clone the Repository
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/Mehboob786/CityChangeDetector.git
-cd CityChangeDetector
+## 🚀 How to Use
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Mehboob786/CityChangeDetector.git
+   cd CityChangeDetector
+
+
+
 Install Dependencies
 Make sure you have Python 3.7+ installed. Then run:
 
@@ -70,15 +74,15 @@ Blue → Water Change
 Gray/Neutral → Construction
 
 📦 Tech Stack
-Streamlit for UI
+Streamlit – for interactive web app
 
-OpenCV for image processing
+OpenCV – for image processing
 
-NumPy for array operations
+NumPy – for array manipulation
 
-PIL for image handling
+PIL – for image handling
 
-streamlit-image-zoom for zoom functionality
+streamlit-image-zoom – for zoom functionality
 
 📁 Project Structure
 bash
@@ -86,10 +90,10 @@ Copy
 Edit
 CityChangeDetector/
 │
-├── app.py                  # Streamlit frontend app
-├── detector.py             # Core change detection logic
-├── requirements.txt        # Python dependencies
-└── README.md               # You're reading it!
+├── app.py              # Streamlit frontend app
+├── detector.py         # Core change detection logic
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
 📸 Sample Use Case
 Imagine you have two satellite images of a city – one from 2020 and one from 2024. Upload both, and SatDetect will:
 
@@ -118,4 +122,3 @@ GitHub: @Mehboob786
 
 📃 License
 This project is licensed under the MIT License. See LICENSE for details.
-
