@@ -34,91 +34,95 @@ Welcome to **SatDetect**, a simple yet powerful tool for detecting **landscape c
    ```bash
    git clone https://github.com/Mehboob786/CityChangeDetector.git
    cd CityChangeDetector
+   ```
 
+2. **Install Dependencies**
+   Make sure you have Python 3.7+ installed. Then run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+3. **Run the App**
+   ```bash
+   streamlit run app.py
+   ```
 
-Install Dependencies
-Make sure you have Python 3.7+ installed. Then run:
+4. **Upload Your Images**  
+   - First Image: older satellite photo of the region  
+   - Second Image: newer satellite photo of the same region
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the App
+   The app will detect and highlight the changes between the two images.
 
-bash
-Copy
-Edit
-streamlit run app.py
-Upload Your Images
+---
 
-First Image: older satellite photo of the region
+## 🧠 How It Works
 
-Second Image: newer satellite photo of the same region
+- The two uploaded images are resized and converted to grayscale.
+- A pixel-by-pixel difference is computed.
+- Changes are isolated using thresholding and contours.
+- Each detected change is classified based on dominant color:
+  - Green → Vegetation Loss
+  - Blue → Water Change
+  - Gray/Neutral → Construction
 
-The app will detect and highlight the changes between the two images.
+---
 
-🧠 How It Works
-The two uploaded images are resized and converted to grayscale.
+## 📦 Tech Stack
 
-A pixel-by-pixel difference is computed.
+- **Streamlit** – for interactive web app
+- **OpenCV** – for image processing
+- **NumPy** – for array manipulation
+- **PIL** – for image handling
+- **streamlit-image-zoom** – for zoom functionality
 
-Changes are isolated using thresholding and contours.
+---
 
-Each detected change is classified based on dominant color:
+## 📁 Project Structure
 
-Green → Vegetation Loss
-
-Blue → Water Change
-
-Gray/Neutral → Construction
-
-📦 Tech Stack
-Streamlit – for interactive web app
-
-OpenCV – for image processing
-
-NumPy – for array manipulation
-
-PIL – for image handling
-
-streamlit-image-zoom – for zoom functionality
-
-📁 Project Structure
-bash
-Copy
-Edit
+```
 CityChangeDetector/
 │
 ├── app.py              # Streamlit frontend app
 ├── detector.py         # Core change detection logic
 ├── requirements.txt    # Python dependencies
 └── README.md           # Project documentation
-📸 Sample Use Case
+```
+
+---
+
+## 📸 Sample Use Case
+
 Imagine you have two satellite images of a city – one from 2020 and one from 2024. Upload both, and SatDetect will:
 
-Highlight newly constructed buildings
+- Highlight newly constructed buildings
+- Show where water bodies have shrunk or shifted
+- Detect areas where vegetation has been removed
 
-Show where water bodies have shrunk or shifted
+---
 
-Detect areas where vegetation has been removed
+## 💡 Future Improvements
 
-💡 Future Improvements
-Support for larger image sizes
+- Support for larger image sizes
+- AI-based advanced classification
+- Exportable reports in PDF
+- Integration with Google Earth Engine or Mapbox
 
-AI-based advanced classification
+---
 
-Exportable reports in PDF
+## 🙌 Contributing
 
-Integration with Google Earth Engine or Mapbox
-
-🙌 Contributing
-Have ideas or want to improve the model? Pull requests are welcome!
+Have ideas or want to improve the model? Pull requests are welcome!  
 Let’s build smarter, greener cities together.
 
-🧑‍💻 Author
-Mehboob Ahmad
-GitHub: @Mehboob786
+---
 
-📃 License
-This project is licensed under the MIT License. See LICENSE for details.
+## 🧑‍💻 Author
+
+**Mehboob Ahmad**  
+GitHub: [@Mehboob786](https://github.com/Mehboob786)
+
+---
+
+## 📃 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
